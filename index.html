@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+  <title>Travel Planner Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Lexend+Deca:wght@200;300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/621b66a204.js" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='./holiday.css'>
+  </head>
+  <div id='title'>
+    <h1> Travel Planner Pro</h1>
+    <h2> Never forget anything for your holiday again</h2>
+  </div>
+  <div id='hero'>
+
+<!--Form starts-->
+
+    <form class='accordion'>
+      <div id='phoneDetail'>
+        <div id='speaker'></div>
+      </div>
+      <h1 id='formTitle'> Let us get your plan started...</h1>
+<!--About you starts-->
+      <div class='accordion-item'>
+        <h3 class='accordion-item-header'> <i class="fa-solid fa-user"></i> About you</h3>
+        <div class='hide'>
+          <section>
+            <label for='name'>Your name</label>
+            <input id='name' type='text' required><br><br>
+
+            <p>Who is coming with you?</p>
+            <input id='solo' type='radio' name='travellers' value='solo' required>
+            <label for='name'>Travelling solo!</label><br>
+            <input id='couple' type='radio' name='travellers' value='couple'>
+            <label for='couple'>My partner, it's a couples holiday!</label><br>
+            <input id='family' type='radio' name='travellers' value='family'>
+            <label for='family'>Full house, it's a family holiday!</label><br>
+            <input id='friends' type='radio' name='travellers' value='friends'>
+            <label for='friends'>My amigos, it's a trip with friends!</label><br>
+            <input id='pet' type='radio' name='travellers' value='pet'>
+            <label for='pet'>My pet, best travel companion!</label><br>
+          </section>
+        </div>
+      </div>
+<!--About you ends-->
+<!--About your trip starts-->
+<div class='accordion-item'>
+  <h3 class='accordion-item-header'><i class="fa-solid fa-suitcase"></i> About your trip</h3>
+  <div class='hide'>
+    <section>
+      <label for='date'>When does your trip start?</label>
+      <input id='date' type='date' required><br>
+    </section>
+    <section>
+      <p>Will you be travelling abroad?</p>
+      <input id='tripAbroad' type='radio' name='abroad' value='Abroad' required>
+      <label for='tripAbroad'>Yes!</label><br>
+      <input id='tripNotAbroad' type='radio' name='abroad' value='NotAbroad'>
+      <label for='tripNotAbroad'>Nope, travelling around same country</label><br>
+    </section>
+    <section>
+      <p>What type of holiday is it?</p>
+      <input id='beach' type='radio' name='holiday' value='beach' required>
+      <label for='beach'>Beach holiday - just sun, sea and sand</label><br>
+      <input id='city' type='radio' name='holiday' value='city'>
+      <label for='city'>A city break</label><br>
+      <input id='hike' type='radio' name='holiday' value='hike'>
+      <label for='hike'>Hiking trip - exploring the nature</label><br>
+      <input id='ski' type='radio' name='holiday' value='ski'>
+      <label for='ski'>Skiing holiday - white and bright</label><br>
+      <input id='safari' type='radio' name='holiday' value='safari'>
+      <label for='safari'>Safari - nice and wild</label><br>
+    </section>
+  </div>
+</div>
+  <!--About your trip ends-->
+  <!--About where you are staying starts-->
+<div class='accordion-item'>
+  <h3 class='accordion-item-header'> <i class="fa-solid fa-bed"></i> About where you will be staying</h3>
+  <div class='hide'>
+    <section>
+      <p>Where will you be staying?</p>
+      <input id='friendsAndFamily' type='radio' name='stay' value='friendsAndFamily' required>
+      <label for='friendsAndFamily'>With family or friends</label><br>
+      <input id='hotel' type='radio' name='stay' value='hotel'>
+      <label for='hotel'>Hotel or other serviced accommodation</label><br>
+      <input id='hostel' type='radio' name='stay' value='hostel'>
+      <label for='hostel'>Hostel or other not serviced accommodation</label><br>
+      <input id='tent' type='radio' name='stay' value='tent'>
+      <label for='tent'>I am statying in a tent!</label><br>
+    </section>
+    <section id='booking' class='hide'>
+      <p>Have you already booked your accommodation?</p>
+      <input id='stayArranged' type='radio' name='booked' value='stayArranged'>
+      <label for='stayArranged'>Yes, all sorted</label><br>
+      <input id='stayNotArranged' type='radio' name='booked' value='stayNotArranged'>
+      <label for='stayNotArranged'>Nope, still to do</label><br>
+    </section>
+  </div>
+</div>
+  <!--About where you are staying ends-->
+  <!--About getting there starts-->
+  <div class='accordion-item'>
+    <h3 class='accordion-item-header'> <i class="fa-solid fa-plane-departure"></i> About getting there</h3>
+    <div class='hide'>
+      <section>
+        <p>How are you getting there?</p>
+        <input id='publicTransport' type='radio' name='transport' value='publicTransport'required>
+        <label for='publicTransport'>Catching a flight, train or a bus</label><br>
+        <input id='driving' type='radio' name='transport' value='driving'>
+        <label for='driving'>Driving - it's a road trip!</label><br>
+        <input id='cycling' type='radio' name='transport' value='cycling'>
+        <label for='cycling'>Cycling</label><br>
+      </section>
+      <section id='tickets' class='hide'>
+        <p>Have you already booked your tickets?</p>
+        <input id='ticketsArranged' type='radio' name='tickets' value='ticketsNotArranged'>
+        <label for='ticketsArranged'>Yes, all sorted</label><br>
+        <input id='ticketsNotArranged' type='radio' name='tickets' value='ticketsNotArranged'>
+        <label for='ticketsNotArranged'>Nope, still to do</label><br>
+      </section>
+      <section id ='rental' class='hide'>
+        <p>Will you be renting your car/bike?</p>
+        <input id='rentalArranged' type='radio' name='rental' value='rentalArranged'>
+        <label for='rentalArranged'>Yes, all sorted</label><br>
+        <input id='rentalNotArranged' type='radio' name='rental' value='rentalNotArranged'>
+        <label for='rentalNotArranged'>Yes, still to do</label><br>
+        <input id='rentalNotRequired'type='radio' name='rental' value='rentalNotRequired'>
+        <label for='rentalNotRequired'>Nope, it've got it!</label><br>
+      </section>
+    </div>
+  </div>
+
+  <!--About getting there ends-->
+  <!--About your trip abroad starts-->
+  <div class='accordion-item' id='optional'>
+    <h3 class='accordion-item-header'> <i class="fa-solid fa-passport"></i> About your trip abroad</h3>
+    <div class='hide'>
+      <section>
+        <p>Will you need a visa to travel?</p>
+        <input id='visaSorted' type='radio' name='visa' value='visaSorted'>
+        <label for='visaSorted'>Yes, all sorted</label><br>
+        <input id='visaToSort' type='radio' name='visa' value='visaToSort'>
+        <label for='visaToSort'>Yes, still to do</label><br>
+        <input id='visaNotRequired'type='radio' name='visa' value='visaNotRequired'>
+        <label for='visaNotRequired'>Not required</label><br>
+      </section>
+      <section>
+        <p>Can't forget the money! How are you planning to pay for small things during your trip?</p>
+        <input id='card' type='radio' name='money' value='card'>
+        <label for='card'>Bank Card</label><br>
+        <input id='cash' type='radio' name='money' value='cash'>
+        <label for='cash'>Cash</label><br>
+      </section>
+      <section>
+        <p>Any destination-specific medical prep (e.g.country-specific vaccinations) required?</p>
+        <input id='medicalPrepSorted' type='radio' name='medical' value='medicalPrepSorted'>
+        <label for='medicalPrepSorted'>Yes, all sorted</label><br>
+        <input id='medicalPrepToSort' type='radio' name='medical' value='medicalPrepToSort'>
+        <label for='medicalPrepToSort'>Yes, still to do</label><br>
+        <input id='medicalPrepNotRequired' type='radio' name='medical' value='medicalPrepNotRequired'>
+        <label for='medicalPrepNotRequired'>Not required</label><br>
+      </section> 
+    </div>
+  </div>
+    <!--About your trip abroad ends-->
+    
+    <input id='button' type="submit" value="See your plan!" />
+    </form>
+    
+    <!--Form Ends-->
+</div>
+  <div id='output' class='hide'>
+      <div id='clockdiv2'>
+  </div>
+    <label for='stillToDo'>THINGS STILL TO DO</label>
+    <section id='stillToDo'></section>
+    <label for='basics'>Remember the basics:</label>
+    <section id='basics'></section>
+    <label for='forOtherTravellers'>Pack items for those coming with you:</label>
+    <section id='forOtherTravellers'></section>
+    <label for='forHolidayType'>Remeber to pack these for your planned activities:</label>
+    <section id='forHolidayType'> </section>
+    <label for='forAccommodation'>Items to pack for your accommodation:</label>
+    <section id='forAccommodation'> </section>
+    <label for='forTransport'>Items to pack for the journey:</label>
+    <section id='forTransport'></section>
+  </div>
+  <footer>
+    <a id='credits' href='https://github.com/aj161/Fakebook-Social.git'> Web Development by Anastasija Jermasenoka <i class="fa-brands fa-github"></i></a>
+  </footer>
+  <script src='./holiday.js'>
+  </script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:rgb(230, 218, 170);
+  font-family: 'Josefin sans', sans-serif;
+  
+}
+
+body {
+  background: url(./Jungle\ Background.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+#title {
+  width: 100%;
+  }
+
+h1 {
+  font-size: 5em;
+  color:white;
+  text-align: center;
+  text-shadow: 4px 3px 0px rgb(31, 30, 30), 9px 8px 0px rgba(0,0,0,0.15);
+  padding: 30px 0;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 4px 3px 0px rgb(31, 30, 30), 9px 8px 0px rgba(0,0,0,0.15);
+
+}
+
+#hero  {
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 70px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
+    
+    
+  }
+
+#formTitle {
+    padding:30px;
+    margin: 0px auto;
+    text-align: center;
+    font-size:3em;
+  }
+
+form h3 {
+  font-size: 2.3em;
+}
+
+form i {
+  font-size: 2em;
+  padding-right:20px;
+}
+
+form {
+  width:90%;
+}
+
+#name{
+  max-width: 90%;
+}
+
+input {
+  font-size: 2em;
+  background-color: black;
+  margin: 10px 0px 0px 0px;
+}
+
+label{ 
+  font-size: 2em;
+}
+
+#date {
+  max-width: 80%;
+}
+
+form p {
+font-size:2.5em;
+padding: 0px 15px 10px 15px;
+color:white;
+text-shadow: 4px 3px 0px rgb(110, 105, 105), 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+input[type='radio'], input[type='checkbox'] {
+  width:20px;
+  height:20px;
+}
+
+#button {
+  font-size: 2em;
+  background-color: rgb(58, 86, 59);
+  color: rgb(248, 247, 246);
+  padding: 25px 15px;
+  border: 0px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
+  margin: 20px auto 30px calc(50% - 150px);
+  width: 300px;;
+}
+
+#button:hover {
+  background-color: rgb(240, 135, 14);
+}
+
+.accordion {
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  margin: 1rem 0;
+  border-radius: 50px;
+  padding:20px 40px;
+  background-color: rgba(10, 13, 8, 0.384);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.128);
+}
+
+.accordion-item:hover {
+  background-color: rgba(0, 0, 0, 0.511);
+  color:black;
+}
+
+.accordion-item-header {
+  padding: 1rem 3rem 1rem 1rem;
+  cursor: pointer;
+}
+
+.hide {
+  max-height: 0;
+  overflow: hidden;
+  display:none;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  border-top: 1px solid;
+}
+
+section {
+  padding:10px;
+}
+
+#output {
+  width: 100%;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 70px;
+  min-height: 800px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  
+}
+
+#output label {
+  font-size: 2.5em;
+  color:rgb(230, 218, 170);
+  text-shadow: 4px 3px 0px rgb(46, 41, 41);
+}
+
+#output li {
+  list-style-type: none;
+  font-size: 1.6em;
+  color: white;
+  margin:5px 0px;
+  
+}
+
+#clockdiv2 {
+  font-size: 2em;
+  color: rgb(236, 237, 227);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer {
+  padding-bottom: 10px;
+  width:100%;
+  text-align: center;
+  color:black;
+  font-size: 1.5rem;
+}
+
+#credits, #credits i {
+  text-decoration: none;
+  color:rgb(184, 174, 174);
+  
+}
+
+@media screen and (min-width:750px) {
+
+  #button {
+    width:500px;
+    margin: 20px auto 30px calc(50% - 250px);
+    width: 500px;;
+  }
+
+  #hero  {
+    width: 80%;
+    min-width: 600px;
+    max-width:800px;
+  }
+
+  #output {
+    width: 60%;
+    min-width: 600px;
+  }
+
+  #output li {
+    padding-left: 40px;
+    font-size: 2em;
+  }
+
+  #clockdiv2 {
+    font-size: 3.5em;
+  }
+
+  #clockdiv2 {
+    font-size: 2.5em;
+  }
+
+}
+
+
+
+@media screen and (max-width:550px) {
+
+#hero {
+  border-radius: 30px;
+}
+
+body {
+  background: url(./Jungle\ Background.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding:20px 5px 5px 5px;
+  text-shadow: 2px 1px 0px rgb(46, 41, 41);
+}
+
+h2{
+  font-size: 1.3rem;
+  padding:5px;
+  text-shadow: 2px 2px 0px rgb(46, 41, 41);
+}
+
+.accordion-item-header {
+  font-size: 1.5rem;
+}
+
+.accordion {
+  margin-top:3px;
+  margin-bottom: 3px;
+}
+
+#formTitle {
+  font-size: 1.5rem;
+  padding:20px 10px 5px 10px;
+  text-shadow: none;
+}
+
+.accordion-item {
+  padding: 0 5px;
+  border-radius: 20px;
+}
+
+h3 i {
+  font-size: 1.5rem;
+}
+
+section p {
+  font-size: 1.3rem;
+  text-shadow: none;
+}
+
+section label{
+  font-size: 1.1rem;
+}
+
+input[type='radio'], input[type='checkbox'] {
+  width:15px;
+  height:15px;
+  margin: 3px 0;
+}
+
+input{
+  font-size: 1.5rem;
+}
+
+#button {
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+#credits, #credits i {
+  font-size: 1rem;
+  
+}
+
+#output li {
+    font-size: 1em;
+  
+}
+
+#output label {
+  font-size: 1.5em;
+}
+
+#output {
+  padding: 20px;
+  border-radius: 30px;
+  }
+
+#clockdiv2 {
+  font-size: 1.5em;
+}
+
+}
+
